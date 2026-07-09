@@ -32,6 +32,8 @@ from memory_extractor import extract_memories, score_memories
 # ============================================================
 # 配置项 —— 全部从环境变量读取，部署时在云平台面板里设置
 # ============================================================
+import os
+os.environ["DATABASE_URL"] = "postgresql://bing_dao_shi_ji_user:NPRH3Zxrgjf44IzgNzbmvx668bkyEXfG@dpg-d97gvfm7r5hc73bd2cq0-a.virginia-postgres.render.com/bing_dao_shi_ji"
 
 # 你的 API Key（OpenRouter / OpenAI / 其他兼容服务）
 API_KEY = os.getenv("API_KEY", "")
